@@ -1,0 +1,97 @@
+.summary {
+  @apply pt-5 w-full;
+
+  > * {
+    @apply mb-4;
+  }
+
+  &-profile-img {
+    @apply rounded-full border-[5px] border-primary w-40 h-40 md:w-52 md:h-52;
+  }
+
+  &-name {
+    @apply text-3xl font-bold md:text-6xl;
+  }
+
+  &-title {
+    @apply text-lg font-bold flex-wrap md:text-2xl text-center;
+  }
+
+  &-intro {
+    @apply text-base text-justify md:text-lg;
+  }
+
+  &-links {
+    @apply flex justify-between;
+  }
+
+  &-link {
+    @apply ml-4 mr-4;
+  }
+}
+
+.timeline {
+  @apply w-full;
+
+  &-items {
+    @apply flex flex-col justify-between items-start border-l-2 border-blue relative;
+
+    > * {
+      @apply mr-8;
+    }
+  }
+
+  &-item-img {
+    @apply -ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full;
+  }
+
+  &-item-content {
+    @apply mb-10 ml-8 block -mt-[25px] rounded-lg;
+  }
+
+  &-img {
+    @apply rounded-full border-[2px] border-blue w-8 h-8 md:w-10 md:h-10 max-w-xs p-0.5 md:p-2 absolute bg-primary z-50;
+  }
+
+  &-company {
+    @apply text-xl font-bold text-blue underline leading-5 md:text-2xl;
+  }
+
+  &-title {
+    @apply text-sm mt-2 font-bold md:text-sm;
+  }
+
+  &-date {
+    @apply text-sm flex items-center text-hl italic;
+
+    > * {
+      @apply mr-2;
+    }
+  }
+
+  &-content {
+    @apply text-base text-justify md:text-lg;
+  }
+
+  &-big {
+    @apply text-xl font-bold w-full mb-2 flex md:text-2xl;
+
+    > * {
+      @apply mr-2;
+    }
+  }
+
+  &-small {
+    @apply text-base w-full mb-8 md:text-lg;
+  }
+
+  &-last-item {
+    @apply w-full;
+  }
+}
+
+.page {
+  &-main {
+    @apply flex min-h-screen flex-col items-center justify-between p-6 md:p-24 xl:p-96 pt-6 pb-6 md:pt-6 xl:pt-6 md:pb-6 xl:pb-6;
+  }
+}
